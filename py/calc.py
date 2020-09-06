@@ -6,7 +6,8 @@ def calc(text):
         try:
             c = SimpleCalculator()
             c.run(text)
-            return c.log[-1]
+            #return c.log[-1]
+            return  ": This is a test (" + c.log[-1] + ")"
         except Exception as e:
             print(e)
             return 0.0
